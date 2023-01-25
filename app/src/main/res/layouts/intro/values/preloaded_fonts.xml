@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/berkshire_swash</item>
+        <item>@font/cookie</item>
+        <item>@font/heebo</item>
+        <item>@font/heebo_light</item>
+        <item>@font/nosifer</item>
+    </array>
+</resources>

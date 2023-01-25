@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#394470</color>
+    <color name="colorPrimaryDark">#1E233C</color>
+    <color name="colorPrimaryDarker">#090C13</color>
+    <color name="colorAccent">#9CB0FF</color>>
+    <color name="colorAccentLighter">#C3CEFD</color>
+    <color name="colorLightX">#FBEDBF</color>
+    <color name="colorSelected">#BF921F</color>
+    <color name="colorGoldLight">#E1B138</color>
+    <color name="colorGoldDark">#705410</color>
+    <color name="dynamic_classify_semi_transparent">#66000000</color>
+
+<!--    Intro Screen-->
+    <!-- colors for button style -->
+    <color name="gradient_start_color">#7E77BF</color>
+    <color name="gradient_end_color">#4C308C</color>
+    <!-- colors for tab and screent text -->
+    <color name="tab_indicator_gray">#9CFFFB</color>
+    <color name="intro_title_color">#000000</color>
+
+
+    <!--Splash Screen-->
+    <color name="splashPrimary">#252D4C</color>
+    <color name="splashPrimaryDark">#252D4C</color>
+    <color name="splashAccent">#3246CA</color>
+</resources>

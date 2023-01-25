@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Doggy</string>
+
+<!--    Dynamic Classify-->
+    <string name="dynamic_classify_ic_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+
+    <string name="dynamic_classify_ic_device" translatable="false">Device:</string>
+    <string-array name="dynamic_classify_ic_devices" translatable="false">
+        <item>CPU</item>
+        <!-- TODO: Add GPU  -->
+        <item>GPU</item>
+    </string-array>
+</resources>

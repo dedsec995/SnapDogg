@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="12dp"
+    android:paddingTop="4dp"
+    android:paddingLeft="12dp"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".static_classify.static_classify_Classify">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.25"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/upperText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/cookie"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Congrats! You Have Unlocked..."
+            android:textColor="@color/colorAccentLighter"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:background="@drawable/button_shape_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.2"
+            android:padding="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/static_classify_selected_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                android:src="@drawable/dogunknown1"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/static_classify_label1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:fontFamily="@font/heebo_light"
+            android:text="Loading Breed"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/static_classify_Confidence1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/heebo_light"
+            android:gravity="center"
+            android:text="Loading Match"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/changeableText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:fontFamily="@font/cookie"
+        android:gravity="center"
+        android:text="Other closer breeds:"
+        android:textColor="@color/colorAccentLighter"
+        android:textSize="24sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/notFoundAnim"
+        app:lottie_rawRes="@raw/dog_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_dark"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/static_classify_label2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:fontFamily="@font/heebo_light"
+                android:gravity="center"
+                android:text=".-.-.-.-.-.-.-.-.-.-.-."
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/static_classify_Confidence2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/heebo_light"
+                android:gravity="center"
+                android:text=".-.-.-.-.-.-.-.-.-.-.-."
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_dark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/static_classify_label3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:fontFamily="@font/heebo_light"
+                android:gravity="center"
+                android:text=".-.-.-.-.-.-.-.-.-.-.-."
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/static_classify_Confidence3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/heebo_light"
+                android:gravity="center"
+                android:text=".-.-.-.-.-.-.-.-.-.-.-."
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.25"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/static_classify_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape_dark"
+            android:fontFamily="@font/heebo_light"
+            android:text="Back"
+            android:textColor="@color/colorAccentLighter"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/static_unlock_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape_dark"
+            android:fontFamily="@font/heebo_light"
+            android:text="Profile"
+            android:textColor="@color/colorAccentLighter"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/static_again_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape_dark"
+            android:fontFamily="@font/heebo_light"
+            android:text="Again"
+            android:textColor="@color/colorAccentLighter"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

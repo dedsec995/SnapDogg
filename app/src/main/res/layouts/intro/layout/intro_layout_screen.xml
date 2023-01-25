@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDarker">
+
+    <ImageView
+        android:id="@+id/intro_intro_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_marginTop="32dp"
+        tools:srcCompat="@drawable/intro_img1"/>
+
+    <TextView
+        android:id="@+id/intro_intro_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Welcome"
+        android:fontFamily="@font/cookie"
+        android:textColor="@color/colorAccentLighter"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/intro_intro_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:layout_weight="0.75"
+        android:fontFamily="@font/heebo_light"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="64dp"
+        android:text="This is my first ever machine learning app, so why not make it fun! If you like dogs this will be one of your favourite apps!"/>
+</LinearLayout>
